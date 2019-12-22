@@ -1,21 +1,42 @@
+const container = document.getElementById('container');
+const calculatorScreen = document.getElementById('calculator-screen');
+const div0 = document.getElementById('div0');
+const div1 = document.getElementById('div1');
+const div2 = document.getElementById('div2');
+const div3 = document.getElementById('div3');
+const div4 = document.getElementById('div4');
+const div5 = document.getElementById('div5');
+const div6 = document.getElementById('div6');
+const div7 = document.getElementById('div7');
+const div8 = document.getElementById('div8');
+const div9 = document.getElementById('div9');
+const divideBtn = document.getElementById('divide');
+const multiplyBtn = document.getElementById('multiply');
+const minusBtn = document.getElementById('minus');
+const plusBtn = document.getElementById('plus');
+const equalsBtn = document.getElementById('equals');
+const decimalBtn = document.getElementById('decimal');
+const clear = document.getElementById('clear');
+const backspace = document.getElementById('backspace');
+const longForm = document.getElementById('long-form');
 
-const add = (x , y) => {
-    return Number(x) + Number(y);
+const add = (a,b) => {
+    return Number(a)+Number(b);
   }
   
-const subtract = (x, y) => {
-    return Number(y) - Number(x);
+const subtract = (a,b) => {
+    return Number(a)-Number(b);
   }
   
-const multiply = (x, y) => {
-    return Number(x) * Number(y);
+const multiply = (a,b) => {
+    return Number(a)*Number(b);
   }
   
-const divide = (x, y) => {
-    return Number(y) / Number(x);
+const divide = (a,b) => {
+    return Number(a)/Number(b);
   }
   
-const equals = (op) => {
+const equals = () => {
     if (operation === 'add') {
       total = add(numX, numY);
     }
@@ -42,29 +63,6 @@ const equals = (op) => {
       numX = total;
   }
   
-  
-  
-  const container = document.getElementById('container');
-  const calculatorScreen = document.getElementById('calculator-screen');
-  const div0 = document.getElementById('div0');
-  const div1 = document.getElementById('div1');
-  const div2 = document.getElementById('div2');
-  const div3 = document.getElementById('div3');
-  const div4 = document.getElementById('div4');
-  const div5 = document.getElementById('div5');
-  const div6 = document.getElementById('div6');
-  const div7 = document.getElementById('div7');
-  const div8 = document.getElementById('div8');
-  const div9 = document.getElementById('div9');
-  const divideBtn = document.getElementById('divide');
-  const multiplyBtn = document.getElementById('multiply');
-  const minusBtn = document.getElementById('minus');
-  const plusBtn = document.getElementById('plus');
-  const equalsBtn = document.getElementById('equals');
-  const decimalBtn = document.getElementById('decimal');
-  const clear = document.getElementById('clear');
-  const backspace = document.getElementById('backspace');
-  const longForm = document.getElementById('long-form');
   
   let numX ='0';
   let numY = '';
